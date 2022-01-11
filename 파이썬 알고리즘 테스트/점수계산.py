@@ -9,10 +9,10 @@ lst = list(map(int,input().split()))
 cnt = 0
 sum = 0
 for i in lst:
-    if i == 0:
-        cnt = 0
-    elif i == 1:
-        cnt += 1
+	if i == 0:
+		cnt = 0
+	elif i == 1:
+		cnt += 1
         sum += cnt
 print(sum)
 
