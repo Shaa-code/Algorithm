@@ -1,4 +1,5 @@
 내가 푼 방식
+
 import sys
 sys.stdin=open("input.txt","rt")
 
@@ -13,17 +14,16 @@ for i in lst:
     elif i == 1:
         cnt += 1
         sum += cnt
-
 print(sum)
 
-잘하는분이 푼 방식
+강사님이 푼 방식
 
 sum = 0
 cnt = 0
 for x in a:
-		if x==1:
+	if x==1:
 		cnt += 1
 		sum += cnt
-		else:
-				cnt=0
+	else:
+		cnt=0
 print(sum)
