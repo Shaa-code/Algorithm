@@ -1,5 +1,4 @@
 내가 푼 방식
-
 import sys
 sys.stdin=open("input.txt","rt")
 
@@ -17,7 +16,6 @@ for i in lst:
 print(sum)
 
 강사님이 푼 방식
-
 sum = 0
 cnt = 0
 for x in a:
