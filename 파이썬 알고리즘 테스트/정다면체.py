@@ -28,7 +28,7 @@ for i in range(n+m+1):
 		max=cnt[i]
 for i in range(n+m+1):
 	if cnt[i]==max:
-		print(i, end=' ')
+print(i, end=' ')
 
 배열인덱스를 n+m개 이상 만들어놓고 배열이 선택되면 그에대한 카운트가 1개 증가하는방식 -> 메모리가 낭비될수 있다.
 
