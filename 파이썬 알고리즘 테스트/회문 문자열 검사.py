@@ -24,7 +24,7 @@ for i in range(n):
 			break -> break를 해주지 않으면 else:문에 있는것이 바로 실행된다.
 	else:
 		print("#%d YES" %(i+1))
-				
+
 python은 index를 음수로도 접근이 가능하다.
 강사님이 푼 아이디어는 배열의 원소가 대칭형으로 같은가를 체크하는 방식이다.
 
