@@ -21,14 +21,14 @@ print(a)
 cnt = [0]*(n+m+3)
 max = -2147000000
 for i in range(1, n+1):
-		for j in range(1, m+1):
-				cnt[i+j] += 1
+	for j in range(1, m+1):
+		cnt[i+j] += 1
 for i in range(n+m+1):
-		if cnt[i]>max:
-				max=cnt[i]
+	if cnt[i]>max:
+		max=cnt[i]
 for i in range(n+m+1):
-		if cnt[i]==max:
-				print(i, end=' ')
+	if cnt[i]==max:
+		print(i, end=' ')
 
 배열인덱스를 n+m개 이상 만들어놓고 배열이 선택되면 그에대한 카운트가 1개 증가하는방식 -> 메모리가 낭비될수 있다.
 
