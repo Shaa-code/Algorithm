@@ -31,7 +31,8 @@ for i in range(1,res+1):
 print(cnt)
 
 
-내가 만든 코드는 너무 Python에 특화되어 있다. 조금 더 수학적으로 접근해보자.
+내가 만든 코드는 너무 Python에 특화되어 있다.
+조금 더 수학적으로 접근해보자.
 
 
 isdecimal (0~9)까지의 숫자.
