@@ -1,4 +1,5 @@
 내가 푼 방식
+
 import sys
 sys.stdin=open("input.txt","rt")
 
