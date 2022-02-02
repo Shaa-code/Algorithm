@@ -7,7 +7,7 @@ n,m = map(int,input().split())
 lst = list(map(int,input().split()))
 
 #lst.sort()
-#print(lst.index(k)+1)
+#print(lst.index(m)+1)
 
 lst.sort()
 print(lst)
