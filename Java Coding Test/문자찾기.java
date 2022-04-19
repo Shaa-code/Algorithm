@@ -1,3 +1,5 @@
+import java.util.*;
+
 class CodeTest{
     public static void main(String[] args){
         Main T = new Main();
