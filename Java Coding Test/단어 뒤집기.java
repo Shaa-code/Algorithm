@@ -22,6 +22,7 @@ class Main {
         }
         return ret;
     }
+}
     
     /*
     public ArrayList<String> solution(int n, String[] str) {
@@ -42,4 +43,3 @@ class Main {
         return ret;
     }
     */
-}
