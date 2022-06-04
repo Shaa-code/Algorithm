@@ -11,13 +11,7 @@ class Main {
             n1 = kb.nextInt();
             n2 = kb.nextInt();
             i++;
-            System.out.println(T.solution(n1, n2));
+            System.out.println(n1 + n2);
         }
-
     }
-
-        public int solution(int n1, int n2){
-            return n1+n2;
-    }
-
 }
