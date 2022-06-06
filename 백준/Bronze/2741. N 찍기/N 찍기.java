@@ -1,21 +1,13 @@
-import java.io.*;
 import java.util.*;
 class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Main T = new Main();
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
-        int n = Integer.parseInt(br.readLine());
+        Scanner kb = new Scanner(System.in);
+        int n = kb.nextInt();
         int i = 1;
-        while(i<=n){
+        while (i <= n) {
             System.out.println(i);
             i++;
         }
-        br.close();
-        bw.flush();
-        bw.close();
+    }
 }
-
-}
-
