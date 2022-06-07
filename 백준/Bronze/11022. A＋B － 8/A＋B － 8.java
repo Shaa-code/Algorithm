@@ -9,7 +9,8 @@ public class Main {
             i++;
             int m = kb.nextInt();
             int n = kb.nextInt();
-            System.out.println("Case #"+i+":"+" "+ m + " + "+ n + " = " + (m+n));//Case #1: 1 + 1 = 2
+            //Case #1: 1 + 1 = 2
+            System.out.println(String.format("Case #%d: %d + %d = %d",i,m,n,m+n));
         }
     }
 }
