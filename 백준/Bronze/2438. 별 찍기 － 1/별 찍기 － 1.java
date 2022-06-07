@@ -3,11 +3,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
-
-        for(int i = 1 ; i <= n ; i++){
-            for(int j = 0 ; j < i ; j++) {
+        int i=1;
+        while(i<=n){
+            int j=0;
+            while(j<i) {
                 System.out.print('*');
+                j++;
             }
+            i++;
             System.out.println();
         }
     }
