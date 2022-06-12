@@ -1,13 +1,12 @@
-import java.util.*;
-
+import java.io.*;
 
 class Main {
-    public static void main(String[] args) {
-        Scanner kb = new Scanner(System.in);
+    public static void main(String[] args) throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         int cnt = 0;
-        int n = kb.nextInt();
+        int n = Integer.parseInt(br.readLine());
         int tmp = n;
-        int num=0;
         while(true) {
             tmp = tmp%10*10 + (tmp/10+tmp%10)%10;
             cnt++;
@@ -17,3 +16,4 @@ class Main {
         System.out.println(cnt);
     }
 }
+
