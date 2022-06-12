@@ -7,13 +7,13 @@ class Main {
         int cnt = 0;
         int n = Integer.parseInt(br.readLine());
         int tmp = n;
-        while(true) {
-            tmp = tmp%10*10 + (tmp/10+tmp%10)%10;
+        do {
+            tmp = tmp % 10 * 10 + (tmp / 10 + tmp % 10) % 10;
             cnt++;
-            if(n == tmp)
-                break;
         }
+        while(n != tmp);
         System.out.println(cnt);
     }
 }
+
 
