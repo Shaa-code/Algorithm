@@ -1,28 +1,26 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class Main {
-    public static void main(String[] args){
-        Scanner kb = new Scanner(System.in);
-        int n = kb.nextInt();
-        int m = kb.nextInt();
-        int A[] = new int[n];
-        int S[] = new int[n];
-        for(int i = 0 ; i < n ; i++){
-            A[i] = kb.nextInt();
-            if(i == 0) {
-                S[i] = A[i];
-            }else{
-                S[i] = S[i - 1] + A[i];
-            }
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int n = Integer.valueOf(st.nextToken());
+        int m = Integer.valueOf(st.nextToken());
+        int[] A = new int[n+1];
+        int[] S = new int[n+1];
+        st = new StringTokenizer(br.readLine());
+        for(int i = 1 ; i <= n ; i++){
+            S[i] = S[i-1] + Integer.parseInt(st.nextToken());
         }
-        for(int i = 0 ; i < m ; i++){
-            int start = kb.nextInt();
-            int end = kb.nextInt();
-            if(start == 1) {
-                System.out.println(S[end - 1]);
-            }else{
-                System.out.println(S[end - 1] - S[start - 1 - 1]);
-            }
+
+        for(int i = 1 ; i <= m ; i++){
+            st = new StringTokenizer(br.readLine());
+            int start = Integer.parseInt(st.nextToken());
+            int end = Integer.parseInt(st.nextToken());
+            System.out.println(S[end] - S[start-1]);
         }
     }
 }
