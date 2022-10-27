@@ -10,23 +10,17 @@ public class Main {
         for(int i = 0 ; i < n ; i++){
             StringTokenizer st = new StringTokenizer(br.readLine());
             double num = Double.parseDouble(st.nextToken());
-
-            for(int j = 0 ; j < 3 ; j++){
-                try {
-                    String sym = st.nextToken();
-                    switch (sym) {
-                        case "@":
-                            num *= 3;
-                            break;
-                        case "%":
-                            num += 5;
-                            break;
-                        case "#":
-                            num -= 7;
-                            break;
-                    }
-                } catch (NoSuchElementException e){
-                    break;
+            while(st.hasMoreTokens()){
+                switch (st.nextToken()) {
+                    case "@":
+                        num *= 3;
+                        break;
+                    case "%":
+                        num += 5;
+                        break;
+                    case "#":
+                        num -= 7;
+                        break;
                 }
             }
             System.out.printf("%.2f\n",num);
