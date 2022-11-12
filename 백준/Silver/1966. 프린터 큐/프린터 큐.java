@@ -23,17 +23,16 @@ public class Main {
 
             int cnt = 0;
 
-
             while(q.size() != 0){
                 int[] tmp = q.poll();
-                boolean flag = true;
+                boolean flag = false;
                 for(int[] Qtmp : q){
                     if(tmp[1] < Qtmp[1]){
-                        flag = false;
+                        flag = true;
                         break;
                     }
                 }
-                if(!flag){
+                if(flag){
                     q.offer(tmp);
                 }else{
                     cnt++;
