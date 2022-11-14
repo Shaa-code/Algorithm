@@ -17,9 +17,7 @@ public class Main {
             int c = Integer.parseInt(st.nextToken());
             if(a == b && b == c && a == c) {
                 ret = 10000 + a * 1000;
-            } else if (a == b){
-                ret = 1000 + a * 100;
-            } else if (b == c){
+            } else if (a == b || b == c){
                 ret = 1000 + b * 100;
             } else if (c == a){
                 ret = 1000 + c * 100;
@@ -27,11 +25,7 @@ public class Main {
                 int greatest = Math.max(a,Math.max(b,c));
                 ret = greatest * 100;
             }
-
-            if (max < ret){
-                max = ret;
-            }
-
+            max = Math.max(max,ret);
         }
         System.out.println(max);
     }
