@@ -6,19 +6,17 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
-        for(int i = 0 ; i < n ; i++){
-            if( i % 2 == 1) {
-                for (int j = 0; j < n; j++) {
-                    System.out.print(" ");
-                    System.out.print("*");
-                }
-            }else{
-                for (int j = 0; j < n; j++) {
-                    System.out.print("*");
-                    System.out.print(" ");
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i % 2 == 1) {
+                    sb.append(" *");
+                } else {
+                    sb.append("* ");
                 }
             }
-            System.out.println();
+            sb.append("\n");
         }
+        System.out.println(sb);
     }
 }
