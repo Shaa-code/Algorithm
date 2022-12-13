@@ -1,0 +1,44 @@
+```
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Stack;
+
+class Main {
+    public static void main(String[] arg) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        char[] str = br.readLine().toCharArray();
+        Stack s = new Stack();
+        for(char x : str){
+            if(!Character.isDigit(x)){
+                int post = 0;
+                int pre = 0;
+                switch(x){
+                    case '+':
+                        post = Integer.parseInt(String.valueOf(s.pop()));
+                        pre = Integer.parseInt(String.valueOf(s.pop()));
+                        s.push(pre + post);
+                        break;
+                    case '-':
+                        post = Integer.parseInt(String.valueOf(s.pop()));
+                        pre = Integer.parseInt(String.valueOf(s.pop()));
+                        s.push(pre - post);
+                        break;
+                    case '*':
+                        post = Integer.parseInt(String.valueOf(s.pop()));
+                        pre = Integer.parseInt(String.valueOf(s.pop()));
+                        s.push(pre * post);
+                        break;
+                    case '/':
+                        post = Integer.parseInt(String.valueOf(s.pop()));
+                        pre = Integer.parseInt(String.valueOf(s.pop()));
+                        s.push(pre / post);
+                        break;
+                }
+            }else s.push(x);
+        }
+        System.out.println(s.pop());
+    }
+}
+
+```
