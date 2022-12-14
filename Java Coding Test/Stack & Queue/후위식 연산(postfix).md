@@ -1,6 +1,6 @@
 ### 내가 짠 코드
 
-```
+```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -54,7 +54,7 @@ class Main {
 
 ### 개선한 코드
 
-```
+```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
