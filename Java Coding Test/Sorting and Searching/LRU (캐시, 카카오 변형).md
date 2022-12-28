@@ -112,7 +112,7 @@ class Main {
 
 1. 값을 포함하고 있는 index 그리고 못 찾았을때를 동시에 처리해야 할때 필요한 알고리즘
 
-```
+```java
 for(int x : arr){
 int pos = -1;
 for(int i = 0; i < s; i++) {
