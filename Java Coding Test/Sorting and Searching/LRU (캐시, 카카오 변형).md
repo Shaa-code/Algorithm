@@ -139,7 +139,7 @@ ex) 3 2 1 일때를 가정해보면 3, 3, 3, 3, 3으로 채워진다.
 
 ### 최종 개선 코드
 
-```
+```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
